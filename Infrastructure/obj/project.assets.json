@@ -686,34 +686,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gio\\.nuget\\packages\\": {}
+    "/home/apolT02-063/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\projectsNetCore\\tienda\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "/home/apolT02-063/Documents/Tienda-NetCore-master/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\projectsNetCore\\tienda\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\gio\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\projectsNetCore\\tienda\\Infrastructure\\obj\\",
+      "projectPath": "/home/apolT02-063/Documents/Tienda-NetCore-master/Infrastructure/Infrastructure.csproj",
+      "packagesPath": "/home/apolT02-063/.nuget/packages/",
+      "outputPath": "/home/apolT02-063/Documents/Tienda-NetCore-master/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/apolT02-063/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\projectsNetCore\\tienda\\Core\\Core.csproj": {
-              "projectPath": "c:\\Users\\gio\\Documents\\PROGRAMACION\\Campus\\projectsNetCore\\tienda\\Core\\Core.csproj"
+            "/home/apolT02-063/Documents/Tienda-NetCore-master/Core/Core.csproj": {
+              "projectPath": "/home/apolT02-063/Documents/Tienda-NetCore-master/Core/Core.csproj"
             }
           }
         }
@@ -753,7 +751,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
       }
     }
   }
