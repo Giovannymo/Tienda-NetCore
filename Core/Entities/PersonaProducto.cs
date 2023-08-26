@@ -3,9 +3,9 @@ namespace Core.Entities;
 public class PersonaProducto
 {
     [Key]
-    public int? IdPersona { get; set; }
-    public Persona? Personas { get; set; }
-    public int? IdProducto { get; set; }
-    public Producto? Productos { get; set; }
+    public int? IdPersonaFk { get; set; }
+    public Persona? Persona { get; set; }
+    public int? IdProductoFk { get; set; }
+    public Producto? Producto { get; set; }
 
 }

@@ -1,6 +1,5 @@
-using Dominio;
+using Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace Infrastructure.Data.Configuration;
 
@@ -27,17 +26,16 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
         builder.Property(p => p.EmailPersona)
         .IsRequired()
         .HasMaxLength(100);
-
-        //Se relaciona un tipo de persona a muchas persona
+                                                                                         
         builder.HasOne(p => p.TipoPersona)
-        .WithMany(e => e.Personas)
-        .HasForeignKey(f => f.IdTipoPersona);
+        .WithMany(p => p.Personas)
+        .HasForeignKey(p => p.IdTipoPersonaFk);
+        
+        builder.HasOne(r => r.Region)
+        .WithMany(r => r.Personas)
+        .HasForeignKey(p => p.IdRegionFk);
 
-        //Relacion una persona tiene una Region pero una
-        //region tiene muchas personas
-        builder.HasOne(p => p.Region)
-        .WithMany(e => e.Personas)
-        .HasForeignKey(f => f.IdRegion)
+
 
 
     }

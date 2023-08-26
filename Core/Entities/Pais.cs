@@ -5,7 +5,8 @@ namespace Core.Entities;
 public class Pais
 {
     [Key] 
-    public in? CodPais { get; set; }
+    public int? IdPais { get; set; }
     public string? NombrePais { get; set; }
     public ICollection<Estado>? Estados { get; set; }
 }
+                

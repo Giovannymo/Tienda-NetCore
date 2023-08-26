@@ -1,6 +1,5 @@
-using Dominio;
+using Core.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace Infrastructure.Data.Configuration;
 
@@ -12,16 +11,14 @@ public class EstadoConfiguration : IEntityTypeConfiguration<Estado>
         // utilizando el objeto 'builder'.
         builder.ToTable("Estado");
 
-        builder.Property(p => p.CodEstado )
-        .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
-        .HasMaxLength(3);
+        builder.HasKey(p => p.IdEstado);
 
-        builder.Property(p => p.NombreEstado )
+        builder.Property(p => p.NombreEstado)
         .IsRequired()
         .HasMaxLength(50);
 
         builder.HasOne(p => p.Pais)
         .WithMany(p => p.Estados)
-        .HasForeignKey(p => p.CodPais);
+        .HasForeignKey(p => p.IdPaisFk);
     }
 }
